@@ -1,16 +1,16 @@
-# Crowdbotics React Native scaffold
+# React Native scaffold
 
-After cloning this repo, you will need to install the dependencies:
+After cloning this repo, install the dependencies:
 
 `cd ProjectName`
 
 `yarn install`
 
-Don't forget to link all native dependencies
+Link all native dependencies
 
 `react-native link`
 
-Then, you need to install the Podfile:
+Install the Podfile:
 
 `cd ios`
 
