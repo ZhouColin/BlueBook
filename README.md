@@ -41,56 +41,21 @@ Finally, you will need to add `GoogleService-Info.plist` (file reference) to you
 2. Go to main target > Build Phases > Copy Bundle resources
 3. Tap un add button
 4. Search the `GoogleService-Info.plist`inside `ios` folder.
-5. Make sure you can see `GoogleService-Info.plist` inside in xcode. Like this:
-
-![Expected project config](https://github.com/react-native-community/react-native-google-signin/raw/master/img/buildPhasesWithoutPods.png)
+5. Make sure you can see `GoogleService-Info.plist` inside in xcode.
 
 ## Running with React Native CLI
 
-### Running android simulator
+### Running Android simulator
 
 1. Activate android emulator following this [instructions](https://facebook.github.io/react-native/docs/running-on-device)
 2. `react-native run-android` from project home folder
 
 ### Running iOS simulator
 
-1. Go to `ios` folder and run `pod install` (if you don't have pod installed, follow this [instructions](https://guides.cocoapods.org/using/getting-started.html) )
+1. Go to `ios` folder and run `pod install`
 2. Run `react-native run-ios` from project home folder.
 
-If you find any compiling problems, try to clean your cache. From the home app folder run:
-
-`cd node_modules/react-native/scripts && ./ios-install-third-party.sh && cd ../../../`
-
-and
-
-`cd node_modules/react-native/third-party/glog-0.3.5/ && ../../scripts/ios-configure-glog.sh && cd ../../../../`
-
-## Running with Fastlane
-
-[Fastlane](https://fastlane.tools/) makes testing, building, and deploying apps
-easier.
-
-Install fastlane globally (`npm i -g fastlane` or `yarn i -g fastlane`).
-Android and iOS dependencies are the same as React Native CLI.
-
-All fastlane commands are run from the platform directory. For example, Android
-commands must be run from `android/`. Fastlane should be executed using `bundle exec` to ensure dependencies are managed correctly.
-
-The commands for Android and iOS are the same:
-
-- Run tests: `bundle exec fastlane tests`
-- Local build: `bundle exec fastlane build`
-- Build and upload a beta (requires signing): `bundle exec fastlane beta`
-- Build or promote a release: `bundle exec fastlane deploy`
-
-### Android
-
-Publish an Android app you must first create an app in the Play Console and
-manually upload an APK. After the first upload run `bundle exec fastlane supply init` from `android/` to sync with the Play store. All future releases will be
-uploaded automatically.
-
-Android uses tracks. A beta release will build the app and upload to the beta
-track. Deploying will promote from beta to production.
+If you find any compiling problems, try to clean your cache.
 
 ## TroubleShooting
 
