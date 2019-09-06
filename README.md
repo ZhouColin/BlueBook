@@ -1,4 +1,4 @@
-# React Native scaffold
+# React Native Scaffold
 
 After cloning this repo, install the dependencies:
 
